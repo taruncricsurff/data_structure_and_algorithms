@@ -1,4 +1,4 @@
-var a = [2,3,4,130,-99,-1,-52,100,15,1,2,-40,20];
+var a = [2,3,4,130,-99,-1,-52,100,15,1,2,50,-40,20];
 
 
 var i =0;
@@ -37,7 +37,6 @@ while(i<length){
 	} else if(a[i]< 0 ){
 
 		sum = sum + a[i];
-		 
 		
 		if(sum < 0) { 
 			
@@ -46,15 +45,15 @@ while(i<length){
 
 		} 
 	}
-	
+
 	++i;
 
-	console.log('sum',sum,'lastmax',lastmax);
+	//console.log('sum',sum,'lastmax',lastmax,'start','end','canbestarting',start,ending,canbestarting,a);
 
 }
 
 
-console.log(lastmax,start,ending);
+console.log(lastmax,'starting',start,'ending',ending);
 
 
 
