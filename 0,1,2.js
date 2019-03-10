@@ -19,8 +19,6 @@ while(i < two) {
 
 	if(c[i] == 0 && c[++x] !=0){
 
-
-
 		++swap;
 		++ zero;
 		temp = c[zero];
