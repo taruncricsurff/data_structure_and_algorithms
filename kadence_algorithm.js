@@ -1,4 +1,4 @@
-var a = [2,3,4,130,-99,-1,-52,100,15,1,2,50,-40,20];
+var a = [2,3,40,130,-199,-1,-52,300,15,1,2,50,-40,20];
 
 
 var i =0;
@@ -19,12 +19,6 @@ while(i<length){
 	if(a[i] >= 0) {
 
 		sum = sum + a[i];
-		
-		if(count ==1) {
-			
-			canbestarting = i;
-			
-		}
 
 		if(sum  >= lastmax ) {
 
@@ -32,7 +26,7 @@ while(i<length){
 			start = canbestarting;
 			ending = i;
 		}
-		count = 0;
+
 
 	} else if(a[i]< 0 ){
 
@@ -41,7 +35,8 @@ while(i<length){
 		if(sum < 0) { 
 			
 			sum = 0;
-			count =1;
+			if(i+1 < length)
+				canbestarting = i +1;
 
 		} 
 	}
